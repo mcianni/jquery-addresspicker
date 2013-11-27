@@ -171,7 +171,7 @@
         if (status == google.maps.GeocoderStatus.OK){
 
           this._updateAddressParts(results[0]);
-          this.element.val(results[0].formatted_address);
+          this.element.val(results[2].formatted_address);
           this.selectedResult = results[0];
 
           if (this.options.updateCallback) {
